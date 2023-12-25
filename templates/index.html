@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIMACAST</title>
+    <link href="{{ url_for('static', filename='styles/style2.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Teko">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+    <div class='clouds'>
+        <div class='clouds-1'></div>
+        <div class='clouds-2'></div>
+        <div class='clouds-3'></div>
+      </div>
+    <p class='title'>CLIMA<span class="title_span">CAST</span></p>
+    <div class='weather_cont-form'>
+        <form action="/weather">
+            <input type="text" name="city" id="city" placeholder="Enter a City" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
