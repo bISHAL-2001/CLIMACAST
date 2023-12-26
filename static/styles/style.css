@@ -19,31 +19,33 @@ body {
 }
 
 input{
-    font-size: 2rem;
-    padding: 15px 30px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    font-family: "Teko", sans-serif;
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
-    caret-color: transparent;
-    position: relative;
+  font-size: 2rem;
+  padding: 15px 30px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  font-family: "Teko", sans-serif;
+  box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
+  caret-color: black;
+  position: relative;
 }
 
 button{
-    font-size: 2rem;
-    /* padding: 1rem; */
-    font-family: "Teko", sans-serif;
-    color: #fff;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 15px 30px;
-    display: inline-block;
-    letter-spacing: 1px;
-    cursor: pointer;
-    background-color: #333b48;
-    transition: .8s;
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
-    position: relative;
+  font-size: 2rem;
+  font-family: "Teko", sans-serif;
+  color: #fff;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 15px 30px;
+  display: inline-block;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #333b48;
+  transition: .8s;
+  box-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  justify-items: center;
 }
 
 button:hover{
@@ -53,9 +55,12 @@ button:hover{
 }
 
 .weather_cont{
+    display: inline-block;
+    flex-wrap: wrap;
     background-image: url('https://i.pinimg.com/736x/3b/39/2b/3b392be0ffe869c1c036ace3277f88c6.jpg');
-    max-width: 75%;
-    min-width: 45%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 60%;
     border-radius: 10px;
     padding: 2rem;
     flex-direction: column;
@@ -79,19 +84,21 @@ button:hover{
     }
   }
 
-
 .weather_cont p{
     color: black;
     font-family: "Teko", sans-serif;
+    font-size: 5vw;
 }
 
 .weather_cont h1{
-    font-family: "Anton", sans-serif;
-    color: black;
+  font-family: "Anton", sans-serif;
+  color: black;
+  font-size: 5vw;
 }
-  .stars {
-    position: fixed;
-    top: 0;
+
+.stars {
+  position: fixed;
+  top: 0;
     left: 0;
     width: 100%;
     height: 120%;
@@ -463,4 +470,18 @@ button:hover{
     50% {
       opacity: 0.6;
     }
+  }
+
+  .weather_cont-form{
+    max-width: 50%;
+    display:inherit;
+    padding: auto;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .weather_cont-form input, button{
+    font-size: 3.5vw;
   }
